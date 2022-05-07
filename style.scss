@@ -1,0 +1,84 @@
+$color-linen: #eae2d6;
+$color-oyster: #d5c3aa;
+$color-tin: #867666;
+$color-tea: #e1b80d;
+$color-dark-tin: #423e3a;
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+body {
+    background-image: url(./white-crossed-fabric-texture.jpg);
+    font-family: 'Libre Baskerville', serif;
+    color: $color-dark-tin;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    .title {
+        text-align: center;
+        padding: 2%;
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    textarea {
+        margin: 0 auto;
+        width: 99%;
+        height: 15vh;
+    }
+
+    .keyboard {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 1500px;
+        background-color: $color-tin;
+        height: 150px;
+        bottom: 0;
+        right: 0;
+        display: inline-flex;
+        justify-content: space-between;
+    
+
+        .key_button {
+            border: 1px solid $color-linen;
+            font-family: 'Libre Baskerville', serif;
+            color: $color-dark-tin;
+            margin: 0.7%;
+            box-shadow: 2px 2px 5px $color-linen;
+            width: 5%;
+            height: 50px;
+            background-color: $color-oyster;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .key_button_plus_half {
+            width: 7.5%;
+        }
+
+        .key_button_wide {
+            width: 10%;
+        }
+
+        .key_button_extra_wide {
+            width: 35%;
+        }
+    }
+    .footer {
+        align-items: flex-end;
+        text-align: end;
+        font-size: 16px;
+        a {
+            font-size: 10px;
+            outline: none;
+            color: $color-dark-tin
+        }
+    }
+}
