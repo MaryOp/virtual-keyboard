@@ -37,26 +37,29 @@ body {
         width: 100%;
         max-width: 1500px;
         background-color: $color-tin;
-        height: 150px;
+        // height: 150px;
         bottom: 0;
         right: 0;
         display: inline-flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        
     
 
         .key_button {
+            cursor: pointer;
             border: 1px solid $color-linen;
             font-family: 'Libre Baskerville', serif;
             color: $color-dark-tin;
             margin: 0.7%;
             box-shadow: 2px 2px 5px $color-linen;
             width: 5%;
-            height: 50px;
+            height: 25px;
             background-color: $color-oyster;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 24px;
+            font-size: 20px;
         }
 
         .key_button_plus_half {
