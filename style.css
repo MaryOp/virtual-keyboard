@@ -1,6 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@font-face {
+  font-family: "Libre Baskerville", serif;
+  src: url(./assets/LibreBaskerville-Regular.ttf);
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  body {
+    font-size: 8px;
+  }
+}
 body {
-  background-image: url(./white-crossed-fabric-texture.jpg);
+  background-image: url(./assets/white-paper-texture.jpg);
   font-family: "Libre Baskerville", serif;
   color: #423e3a;
 }
@@ -16,13 +29,13 @@ body {
   text-align: center;
   padding: 2%;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 3.6rem;
 }
 .wrapper textarea {
   margin: 0 auto;
   width: 99%;
   height: 15vh;
-  font-size: 120%;
+  font-size: 1.2rem;
   font-family: "Libre Baskerville", serif;
 }
 .wrapper .keyboard {
@@ -49,30 +62,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
+}
+.wrapper .keyboard .key_button:hover {
+  opacity: 0.6;
 }
 .wrapper .keyboard .key_button_plus_half {
   width: 7.5%;
-  font-size: 14px;
+  font-size: 1.6rem;
 }
 .wrapper .keyboard .key_button_wide {
   width: 10%;
-  font-size: 14px;
+  font-size: 1.6rem;
 }
 .wrapper .keyboard .key_button_extra_wide {
   width: 45%;
-  font-size: 14px;
+  font-size: 1.6rem;
 }
-.wrapper .keyboard .key_button_extra_wide .key_button_active {
+.wrapper .keyboard .key_button_active {
   background-color: #e1b80d;
+  opacity: 1;
 }
 .wrapper .footer {
   align-items: flex-end;
   text-align: end;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .wrapper .footer a {
-  font-size: 10px;
+  font-size: 1rem;
   outline: none;
   color: #423e3a;
 }/*# sourceMappingURL=style.css.map */
