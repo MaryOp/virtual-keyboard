@@ -1,6 +1,8 @@
 // DOMContentLoaded
 import { create_keyboard_keys } from "./keys.js"
-import './style.css'
+// import './style.css'
+import styles from './style.css' assert { type: "css" };
+document.adoptedStyleSheets = [styles];
 
 let keys_array_eng = [
     '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace',
