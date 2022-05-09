@@ -1,18 +1,6 @@
 {
-  "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "postcss-loader": "^6.2.1",
-    "sass-loader": "^12.6.0",
-    "style-loader": "^3.3.1"
-  },
-  "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
-    "eslint": "^8.15.0",
-    "webpack-cli": "^4.9.2"
-  },
-  "browser": "./browser/specific/main.js"
+    "scripts": {
+        "build": "NODE_ENV='production' webpack",
+        "start": "webpack-dev-server"
+    }
 }
