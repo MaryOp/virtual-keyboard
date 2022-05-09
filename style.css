@@ -22,6 +22,8 @@ body {
   margin: 0 auto;
   width: 99%;
   height: 15vh;
+  font-size: 120%;
+  font-family: "Libre Baskerville", serif;
 }
 .wrapper .keyboard {
   margin: 20px auto;
@@ -42,7 +44,7 @@ body {
   margin: 0.7%;
   box-shadow: 2px 2px 5px #eae2d6;
   width: 5%;
-  height: 25px;
+  height: 5vh;
   background-color: #d5c3aa;
   display: flex;
   justify-content: center;
@@ -51,12 +53,18 @@ body {
 }
 .wrapper .keyboard .key_button_plus_half {
   width: 7.5%;
+  font-size: 14px;
 }
 .wrapper .keyboard .key_button_wide {
   width: 10%;
+  font-size: 14px;
 }
 .wrapper .keyboard .key_button_extra_wide {
-  width: 35%;
+  width: 45%;
+  font-size: 14px;
+}
+.wrapper .keyboard .key_button_extra_wide .key_button_active {
+  background-color: #e1b80d;
 }
 .wrapper .footer {
   align-items: flex-end;
